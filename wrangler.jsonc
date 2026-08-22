@@ -1,7 +1,9 @@
 {
   "name": "lucky6-v2",
+  "main": "worker.js",
   "compatibility_date": "2024-09-23",
   "assets": {
-    "directory": "./dist"
+    "directory": "./dist",
+    "binding": "ASSETS"
   }
 }
