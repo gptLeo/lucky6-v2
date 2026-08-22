@@ -14,7 +14,7 @@ This rebuild fixes all four:
 
 | Issue | Fix |
 |---|---|
-| Fake historical data | Real dataset (4,288 draws, 1993–2025) from the public, CORS-enabled [icelam/mark-six-data-visualization](https://github.com/icelam/mark-six-data-visualization) repo, with a bundled local JSON snapshot as offline fallback. |
+| Fake historical data | Real dataset (4,380 draws, 1993–2026) — 4,288 draws from the public, CORS-enabled [icelam/mark-six-data-visualization](https://github.com/icelam/mark-six-data-visualization) repo, plus 92 additional 2026 draws (that dataset's auto-updater lapsed after 2025-12-28) manually verified against [HKJC](https://bet.hkjc.com/) / [lottery.hk](https://lottery.hk/en/mark-six/results/) official results and merged into the bundled local snapshot. |
 | Fake "AI/ML" predictions | Removed entirely. Replaced with clearly-labeled traditional/cultural methods (I Ching, Zi Wei Dou Shu) and transparent historical statistics — **all explicitly disclosed as non-predictive, entertainment-only**. Mark Six draws are certified random; no method can improve your odds. |
 | Supabase backend dependency | Removed. 100% frontend, all persistence (favorites, prediction history, language, theme) via `localStorage`. Fully self-contained, deployable as a static site. |
 | Bloated structure | Rebuilt clean with ~30 focused files: `lib/` (pure logic), `hooks/` (state), `components/` (UI), `pages/` (2 pages). |

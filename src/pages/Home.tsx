@@ -39,7 +39,7 @@ export function Home({ language, onToggleLanguage, isDark, onToggleTheme, onBack
   const [selectedMethods, setSelectedMethods] = useState<MethodId[]>([]);
   const [ziweiDate, setZiweiDate] = useState(todayStr());
   const [draws, setDraws] = useState<DrawResult[]>([]);
-  const [dataSource, setDataSource] = useState<"remote" | "local" | null>(null);
+  const [dataSource, setDataSource] = useState<"merged" | "local" | null>(null);
   const [isLoadingHistory, setIsLoadingHistory] = useState(true);
   const [isPredicting, setIsPredicting] = useState(false);
   const [result, setResult] = useState<PredictionResult | null>(null);
